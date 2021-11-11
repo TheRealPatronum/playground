@@ -6,9 +6,8 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      meaningOfLife: 47,
+      meaningOfLife: 47 + this.props.increment,
     };
-    this.props = props;
   }
   handleClick = () => {
     // this.setState({ meaningOfLife: this.state.meaningOfLife + 1 }, () => console.log(this.state.meaningOfLife));
